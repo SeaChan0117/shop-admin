@@ -12,6 +12,7 @@
     "@types/node": "^16.6.1",
     "axios": "^0.21.1",
     "element-plus": "^1.0.2-beta.71",
+    "nprogress": "^0.2.0",
     "vue": "^3.0.5",
     "vue-router": "4",
     "vuex": "^4.0.2"
@@ -19,6 +20,7 @@
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
+    "@types/nprogress": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^4.29.2",
     "@typescript-eslint/parser": "^4.29.2",
     "@vitejs/plugin-vue": "^1.3.0",

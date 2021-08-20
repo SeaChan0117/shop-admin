@@ -1,5 +1,5 @@
 <template>
-  <div>content</div>
+  <div>商品规格</div>
 </template>
 
 <script lang="ts" setup>

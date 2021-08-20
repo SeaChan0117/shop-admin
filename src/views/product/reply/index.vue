@@ -1,5 +1,5 @@
 <template>
-  <div>content</div>
+  <div>商品评论</div>
 </template>
 
 <script lang="ts" setup>

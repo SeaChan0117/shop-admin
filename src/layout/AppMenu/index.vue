@@ -1,7 +1,7 @@
 <template>
   <el-menu
     :unique-opened="true"
-    default-active="/"
+    :default-active="$route.path"
     class="el-menu-vertical"
     background-color="#304156"
     text-color="rgba(255, 255, 255, 0.7)"
@@ -10,14 +10,14 @@
     :router="true"
   >
     <el-menu-item index="/">
+      <i class="el-icon-s-home" />
       <template #title>
-        <i class="el-icon-s-home" />
-        <span>首页</span>
+        首页
       </template>
     </el-menu-item>
     <el-submenu index="/product">
       <template #title>
-        <i class="el-icon-location" />
+        <i class="el-icon-present" />
         <span>商品</span>
       </template>
       <el-menu-item index="/product/product_list">
@@ -35,7 +35,7 @@
     </el-submenu>
     <el-submenu index="/order">
       <template #title>
-        <i class="el-icon-location" />
+        <i class="el-icon-document-copy" />
         <span>订单</span>
       </template>
       <el-menu-item index="/order/list">
@@ -47,7 +47,7 @@
     </el-submenu>
     <el-submenu index="/permission">
       <template #title>
-        <i class="el-icon-location" />
+        <i class="el-icon-user-solid" />
         <span>管理权限</span>
       </template>
       <el-menu-item index="/permission/role">
