@@ -23,3 +23,14 @@ export const getLoginInfo = () => {
   //   slide: string[]
   // }>>('/login/info')
 }
+
+export const getCaptcha = () => {
+  return request<Blob>({
+    method: 'GET',
+    url: '/captcha_pro',
+    params: {
+      stamp: Date.now()
+    },
+    responseType: 'blob' // 请求获取图片数据
+  })
+}
